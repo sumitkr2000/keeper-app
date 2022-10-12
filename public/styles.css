@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=McLaren&family=Montserrat&display=swap');
 
 * {
   padding: 0;
@@ -79,7 +79,7 @@ form.create-note {
   padding: 15px;
   border-radius: 7px;
   box-shadow: 0 1px 5px rgb(138, 137, 137);
-  max-width: 100%;
+  max-width: 90%;
 }
 form.create-note input,
 form.create-note textarea {
