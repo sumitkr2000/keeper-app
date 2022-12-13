@@ -16,7 +16,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .get("https://keeper-app-databse.herokuapp.com/")
+      .get("http://localhost:5000/")
       .then((res) => {
         setNotes(res.data);
       })
@@ -25,7 +25,7 @@ function App() {
 
   function deleteNote(id) {
     axios
-      .delete(`https://keeper-app-databse.herokuapp.com/${id}`)
+      .delete(`http://localhost:5000/${id}`)
       .then((res) => console.log(res.data));
     setNotes((prevNotes) => {
       return prevNotes.filter((note) => note._id !== id);

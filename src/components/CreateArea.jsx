@@ -22,7 +22,7 @@ function CreateArea(props) {
   }
 
   function submitNote(event) {
-    axios.post("https://keeper-app-databse.herokuapp.com/", note)
+    axios.post("http://localhost:5000/", note)
     .then(res => console.log(res.data));
 
     setNote({
