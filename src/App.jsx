@@ -16,7 +16,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/")
+      .get("https://apricot-cow-cape.cyclic.app/")
       .then((res) => {
         setNotes(res.data);
       })
@@ -25,7 +25,7 @@ function App() {
 
   function deleteNote(id) {
     axios
-      .delete(`http://localhost:5000/${id}`)
+      .delete(`https://apricot-cow-cape.cyclic.app/${id}`)
       .then((res) => console.log(res.data));
     setNotes((prevNotes) => {
       return prevNotes.filter((note) => note._id !== id);

@@ -22,7 +22,7 @@ function CreateArea(props) {
   }
 
   function submitNote(event) {
-    axios.post("http://localhost:5000/", note)
+    axios.post("https://apricot-cow-cape.cyclic.app/", note)
     .then(res => console.log(res.data));
 
     setNote({
